@@ -46,6 +46,11 @@ Following are insights based on the initial analysis on the dataset
 7. Third highest bill is 285 pounds with highest being 440 and 415, with an average of 16 pounds per day.
 
 
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Category.png?raw=true)
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Quantity.png?raw=true)
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Size.png?raw=true)
+
+
 ### Price Analysis
 
 1. Classic category is the most-selling while Chicken is the least-selling due to price. Supreme category had more orders than the Veggie category despite the higher average price. This could indicate a lesser preference of the Veggie pizzas.
@@ -53,6 +58,10 @@ Following are insights based on the initial analysis on the dataset
 3. The Classic Deluxe Pizza is the best selling pizza (2453), followedby barbeque chicken (24).
 4. Cheapest pizzas - Big Meat Pizza and the Vegetables pizza have 78% and 62% of the maximum orders respectively. Contrastingly, Expensive pizzas - Thai chicken and California Chicken are amongst the most sold.
 5. Average Order Value is 17 GBP. 
+
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/topPizzas.png?raw=true)
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Orders_hour.png?raw=true)
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_day.png?raw=true)
 
 ### Time-series (Operations) Analysis
 
@@ -62,6 +71,10 @@ Following are insights based on the initial analysis on the dataset
 4. Lunch times of 12pm - 2pm an Dinner times of 7pm- 9pm present the busiest times of the day.
 5. Weekdays present 72% of the sales of the week indicating a strong presence near workplaces rather than residential areas.
 6. Peak hours of 4pm - 9pm comprises 54% of the sales, indicating no imbalance in orders in the evening/dinner.
+
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_quarter.png?raw=true)
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/weekday_ordersPizzaProject_schema.png?raw=true)
+![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_peaktimes.png?raw=true)
 
 ## Recommendations
 
