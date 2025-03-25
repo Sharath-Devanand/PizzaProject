@@ -46,9 +46,11 @@ Following are insights based on the initial analysis on the dataset
 7. Third highest bill is 285 pounds with highest being 440 and 415, with an average of 16 pounds per day.
 
 
-![Revenue over Category](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Category.png?raw=true)
-![Revenue over Quantity](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Quantity.png?raw=true)
-![Revenue over Size](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Size.png?raw=true)
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Category.png?raw=true" width="30%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Quantity.png?raw=true" width="30%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Size.png?raw=true" width="30%">
+</p>
 
 
 ### Price Analysis
