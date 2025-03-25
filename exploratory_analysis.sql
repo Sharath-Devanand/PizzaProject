@@ -60,3 +60,6 @@ FROM Orders
 GROUP BY Order_date
 ORDER BY min_orders_per_day
 LIMIT 2;
+
+SELECT ROUND(COUNT(order_id)/COUNT(DISTINCT order_date),1) AS avg_orders_per_day
+FROM Orders;

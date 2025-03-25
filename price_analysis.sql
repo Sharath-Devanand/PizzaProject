@@ -15,7 +15,7 @@ Key Insights:
 
 
 -- Creating a view to store price-related data for easy analysis
-CREATE VIEW IF NOT EXISTS price AS
+CREATE VIEW IF NOT EXISTS pizzaPrice AS
 SELECT t1.order_detail_id,
         t1.order_id,
         t1.pizza_id,
@@ -33,53 +33,83 @@ ON t2.pizza_type_id = t3.pizza_type_id;
 
 
 -- Question 1: What is the average price of pizzas across different categories
-SELECT category, ROUND(AVG(price),2) as cat_price, SUM(quantity) as cat_count
-FROM price
-GROUP BY category;
+SELECT category,
+        ROUND(AVG(price),2) as category_price,
+        SUM(quantity) as category_count
+FROM pizzaPrice
+GROUP BY category
+ORDER BY category_count DESC;
 
 
 -- Question 2: How do average prices vary across different pizza sizes?
-SELECT size, ROUND(AVG(price),2) as avg_price, SUM(quantity) as size_count
-FROM price
-GROUP BY size;
+SELECT size,
+        ROUND(AVG(price),2) as avg_price,
+        SUM(quantity) as size_count
+FROM pizzaPrice
+GROUP BY size
+ORDER BY size_count DESC;
 
 
 -- Question 3: What are the top 3 most and least sold pizzas and their prices?
 -- Least sold pizzas
-SELECT pizza_name, price, SUM(quantity) as pizza_count
-FROM price
+SELECT pizza_name, price, SUM(quantity) as least_sold_count
+FROM pizzaPrice
 GROUP BY pizza_name
-ORDER BY pizza_count
+ORDER BY least_sold_count
 LIMIT 3;
 
 
 --Most sold pizzas
-SELECT pizza_name, price, SUM(quantity) as pizza_count
-FROM price
+SELECT pizza_name, price, SUM(quantity) as most_sold_count
+FROM pizzaPrice
 GROUP BY pizza_name
-ORDER BY pizza_count DESC
+ORDER BY most_sold_count DESC
 LIMIT 3;
 
 -- Question 4: What are the top 3 most expensive and top 3 cheapest pizzas, along with their total quantity sold?
 -- Cheapest pizzas
 
-SELECT pizza_name, price, SUM(quantity) as sum_pizza
-FROM price
+WITH max_quantity AS(
+        SELECT SUM(quantity) as max_sold
+        FROM pizzaPrice
+        GROUP BY pizza_name
+        ORDER BY max_sold DESC
+        LIMIT 1
+        )
+
+SELECT pizza_name,
+        price AS cheapest_price,
+        SUM(quantity) as count_pizza,
+        ROUND(SUM(quantity)*100.0/(SELECT max_sold FROM max_quantity),1) AS percentage_from_max
+FROM pizzaPrice
 GROUP BY pizza_name
-ORDER BY price
+ORDER BY cheapest_price, count_pizza DESC
 LIMIT 3;
 
 -- Expensive pizzas
-SELECT pizza_name, price, SUM(quantity) as sum_pizza
-FROM price
+
+WITH max_quantity AS(
+        SELECT SUM(quantity) as max_sold
+        FROM pizzaPrice
+        GROUP BY pizza_name
+        ORDER BY max_sold DESC
+        LIMIT 1
+        )
+
+
+SELECT pizza_name,
+        price AS expensive_price,
+        SUM(quantity) as count_pizza,
+        ROUND(SUM(quantity)*100.0/(SELECT max_sold FROM max_quantity),1) AS percentage_from_max
+FROM pizzaPrice
 GROUP BY pizza_name
-ORDER BY price DESC
+ORDER BY expensive_price DESC, count_pizza DESC
 LIMIT 3;
 
 -- Question 5: Which price points have the highest number of orders, and what are their associated categories and sizes?
 
 SELECT price, SUM(quantity) AS price_count, category, size
-FROM price
+FROM pizzaPrice
 GROUP BY price, category
 ORDER BY price_count DESC
 LIMIT 5;
@@ -87,14 +117,14 @@ LIMIT 5;
 -- Question 6: What are the top 3 pizzas with the most orders, and what are their prices?
 
 SELECT pizza_name, price, COUNT(DISTINCT order_id) as order_count
-FROM price
+FROM pizzaPrice
 GROUP BY price, pizza_name
 ORDER BY order_count DESC
 LIMIT 5;
 
 -- Question 7: What is the average order value
-SELECT DISTINCT ROUND(AVG(quantity*price),2) as avg_order
-FROM price
-GROUP BY order_id
-ORDER BY avg_order DESC
-LIMIT 5;
+
+SELECT ROUND(SUM(price*quantity)/(SELECT DISTINCT COUNT(order_id) FROM pizzaPrice),1) as aov
+FROM pizzaPrice;
+
+

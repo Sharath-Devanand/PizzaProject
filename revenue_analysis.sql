@@ -44,55 +44,62 @@ GROUP BY category
 ORDER BY category_sales DESC;
 
 -- Question 2: How does pizza size impact revenue and average price?
-SELECT size, SUM(cost) AS size_sales, ROUND(AVG(price),1) AS price_avg
+SELECT size,
+        SUM(cost) AS size_sales,
+        ROUND(AVG(price),1) AS price_avg,
+        ROUND(SUM(cost)/AVG(price),1) AS sales_to_avg_price_ratio
 FROM Revenue
 GROUP BY size
 ORDER BY size_sales DESC;
 
--- Question 3: Which pizzas generate the most revenue within each category?
+-- Question 3: Which pizzas generate the most revenue and which category were they from?
 -- Additionally, how does the average revenue of these pizzas compare to their category's average?
-SELECT category, pizza_name,
+SELECT pizza_name AS pizza_name,
+        (SELECT category FROM PizzaTypes t2 WHERE t2.pizza_name = t1.pizza_name) AS category,
         SUM(cost) as pizza_sales,
-        ROUND(AVG(cost),2) as pizza_avg,
-        ROUND(AVG(cost) OVER (PARTITION BY category),2) AS category_avg
-FROM revenue
-GROUP BY category, pizza_name
+        ROUND(AVG(cost),2) as pizza_avg_across_sizes
+FROM revenue t1
+GROUP BY pizza_name
 ORDER BY pizza_sales DESC
-LIMIT 10;
+LIMIT 3;
 
 -- Question 4: How does the revenue of individual pizzas compare to their overall category revenue?
 SELECT pizza_id,
-        category,
-        SUM(cost) AS id_sales,
-        SUM(cost) OVER(PARTITION BY category) AS cat_sales
+        pizza_name AS pizza_name,
+        size as pizza_size,
+        SUM(cost) AS sales_acrossId
 FROM revenue
 GROUP BY pizza_id
-LIMIT 5;
+LIMIT 3;
 
 -- Question 5: How is revenue distributed across different quantities of pizzas purchased?
-SELECT quantity, COUNT(quantity), SUM(cost) as quant_sales, ROUND(SUM(cost)/(SELECT SUM(cost) FROM revenue)*100,2) AS quant_percent
+SELECT quantity,
+        COUNT(quantity) as order_count,
+        SUM(cost) as quantity_sales,
+        ROUND(SUM(cost)/(SELECT SUM(cost) FROM revenue)*100,2) AS quantity_percentage
 FROM revenue
 GROUP BY quantity;
 
 -- Bonus Analysis: What are the top 3 revenue-generating pizzas when ordered in quantities greater than 1?
-SELECT  category,pizza_name, SUM(cost) as pizza_sales_top3
+SELECT  category,pizza_name, SUM(cost) as pizza_sales_top3_morethanonepizza
 FROM revenue
 WHERE quantity > 1
 GROUP BY pizza_name
-ORDER BY pizza_sales_top3 DESC
+ORDER BY pizza_sales_top3_morethanonepizza DESC
 LIMIT 3;
 
 -- Question 6: Does the ranking of pizza categories change when considering only orders with more than one pizza?
 SELECT category,
-        SUM(cost) as cat_sales_morethanone
+        SUM(cost) as category_sales_morethanone
 FROM revenue
 WHERE quantity>1
 GROUP BY category;
 
 
-SELECT order_id,
-        SUM(cost) AS order_cost
+-- Question 7 - Highest and lowest bill for an order compared to the average
+SELECT SUM(cost) AS highest_order_cost,
+        ROUND(AVG(cost) OVER(),1) AS avg_order_cost
 FROM revenue
 GROUP BY order_id
-ORDER BY order_cost DESC
-LIMIT 5;
+ORDER BY highest_order_cost DESC
+LIMIT 3;

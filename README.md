@@ -28,19 +28,31 @@ The analysis is further sub-divided into 4 different categories each associated 
 
 Following are insights based on the initial analysis on the dataset
 
-1. Restaurant provides 32 different pizzas under 4 major categories - Chicken, Classic, Supreme and Veggie.
-2. The Veggie and the Supreme category comprises 18 pizzas out of the 32 pizza types (56%).
-3. Pizzas come in 5 different sizes - Small, Medium, Large, Extra large and Double Extra Large.
-4. Extra large and double extra large pizzas are found to be the highest prices of 25 and 36 pounds respectively, while the other size range from 9 to 23 pounds.
-5. Average 2 pizzas per order with a maximum of 4 pizzas in an order.
-6. The number of orders range from 27 to 115 per day with an average of 
+1. There are 32 distinct pizzas across 4 major categories - Chicken, Classic, Supreme and Veggie.
+2. Pizzas come in 5 different sizes - Small (S), Medium (M), Large (L), Extra large (XL) and Double Extra Large (XXL).
+3. The price of the pizzas range from 9 to 23 GBP while Extra large and double extra large pizzas are found to be the highest prices of 25 and 36 GBP.
+4. Restaurent has had 20k+ orders that year with 48k pizzas made - averaging 2 pizzas per order and a maximum of upto 4 pizzas in an order.
+5. An average of 59 orders per day ranging from 27 to 115 per day with .
 
 
 ### Revenue Analysis
 
+1. Classic Category generates the maximum revenue of 220k GBP, while the Veggie produced the least sales of 193k pounds.
+2. Large sized pizzas contribute to the most sales with 375k GBP while XXL pizzas had the least revenue with 1k GBP owing to the reason of high price.
+3. Contrasting to category sales, 3 pizzas- Thai Chicken, Barbecue chicken and California chicken from the Chicken category across all sizes produce the maximum revenue ranging from 41k to 43k pounds with an average of 18 pounds per pizza across all sizes.
+4. Barbeque Chicken Pizza is the best selling pizza across all sizes(42k GBP).
+5. 96% percent of the sales or revenue is from orders with only one pizza in the order.
+6. More than one pizza orders - The California Chicken pizza and the classic big meat pizza - most revenue.
+7. Third highest bill is 285 pounds with highest being 440 and 415, with an average of 16 pounds per day.
+
 
 ### Price Analysis
 
+1. Classic category is the most-selling while Chicken is the least-selling due to price. Supreme category had more orders than the Veggie category despite the higher average price. This could indicate a lesser preference of the Veggie pizzas.
+2. The large size pizzas are the most ordered with close to 18k+ orders while the double extra large pizzas are the least ordered.
+3. The Classic Deluxe Pizza is the best selling pizza (2453), followedby barbeque chicken (24).
+4. Cheapest pizzas - Big Meat Pizza and the Vegetables pizza have 78% and 62% of the maximum orders respectively. Contrastingly, Expensive pizzas - Thai chicken and California Chicken are amongst the most sold.
+5. Average Order Value is 17 GBP. 
 
 ### Time-series (Operations) Analysis
 
