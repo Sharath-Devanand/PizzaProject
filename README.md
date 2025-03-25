@@ -2,7 +2,7 @@
 
 ## Project Background
 
-I am a data analyst working at Pizza Stop, a local pizzeria based in Sheffield. I focus on extracting insights from the 2015 sales records containing 10K+ orders. Based on these insights, I am tasked with providing recommendations to the marketing, human resources, and finance departments.
+I am a data analyst working at Pizza Stop, a local pizzeria based in Sheffield. I focus on extracting insights from the 2015 sales records containing 10K+ orders. Based on these insights, I am tasked with providing recommendations to the pricing, operations, and finance departments.
 
 
 ## Executive Summary
@@ -28,22 +28,26 @@ The analysis is further sub-divided into 4 different categories each associated 
 ### Revenue Analysis
 
 
-### Pizza Price Analysis
+### Price Analysis
 
 
-### Time-series Analysis
+### Time-series (Operations) Analysis
 
 
 ## Recommendations
 
 The following categories present the recommendations for each department based on the insights gathered from the above analysis.
 
-### Marketing
-
 ### Finance
 
 
-### Human Resources
+
+### Pricing
+
+
+### Operations
 
 
 ## Assumptions and Caveats
+
+

@@ -11,59 +11,52 @@ b. Menu Optimisation and c. Logistics Management
 --- Exploration to understand the demographics
 
 -- PizzaTypes Table
-SELECT COUNT(DISTINCT(pizza_name))
+SELECT COUNT(DISTINCT(pizza_name)) AS DistinctPizzaCount
 FROM PizzaTypes;
 
 
-SELECT COUNT(DISTINCT(category))
+SELECT DISTINCT(category) AS Categories
 FROM PizzaTypes;
 
-
-SELECT DISTINCT(category)
-FROM PizzaTypes;
-
-SELECT category, COUNT(DISTINCT pizza_name)
+SELECT category, COUNT(DISTINCT pizza_name) AS category_wise_pizza_count
 FROM PizzaTypes
 GROUP BY category;
 
 
-SELECT COUNT(DISTINCT pizza_type_id)
-FROM PizzaTypes;
-
 --- Pizza Table
 
-SELECT DISTINCT(size)
+SELECT DISTINCT(size) AS differentSizes
 FROM Pizzas;
 
 
-SELECT COUNT(DISTINCT price)
+SELECT COUNT(DISTINCT price) AS distinct_prices, MIN(price) AS min_price, MAX(price) AS max_price
 FROM Pizzas;
 
-SELECT size, COUNT(DISTINCT price)
+SELECT size, COUNT(DISTINCT price)AS distinct_price, MIN(price) AS min_price, MAX(price) AS max_price
 FROM Pizzas
 GROUP BY size;
 
 -- Order Details Table
 
-
-SELECT order_id, COUNT(order_detail_id) AS uniqePizzaCount, COUNT(pizza_id) AS total_pizza
-FROM OrderDetails
-GROUP BY order_id
-HAVING COUNT(order_detail_id) != COUNT(pizza_id);
-
-SELECT COUNT(DISTINCT order_id) AS total_orders, COUNT(DISTINCT order_detail_id) AS total_order_details, COUNT(DISTINCT pizza_id) AS total_pizzas
+SELECT COUNT(DISTINCT order_id) AS total_orders,
+        COUNT(DISTINCT order_detail_id) AS total_order_details,
+        COUNT(DISTINCT pizza_id) AS total_pizza_variations,
+        ROUND(COUNT(DISTINCT order_detail_id)/COUNT(DISTINCT order_id),2) AS avg_pizzas_per_order
 FROM OrderDetails;
 
-SELECT COUNT(pizza_id) AS total_pizzas_ordered
-FROM OrderDetails;
-
-SELECT DISTINCT(quantity) AS unique_quant
+SELECT DISTINCT(quantity) AS quantity_range
 FROM OrderDetails;
 
 -- Orders Table
 
-SELECT order_date, COUNT(order_id) AS orderCount
+SELECT order_date, COUNT(order_id) AS max_orders_per_day
 FROM Orders
 GROUP BY Order_date
-ORDER BY orderCount ASC
-LIMIT 5;
+ORDER BY max_orders_per_day DESC
+LIMIT 2;
+
+SELECT order_date, COUNT(order_id) AS min_orders_per_day
+FROM Orders
+GROUP BY Order_date
+ORDER BY min_orders_per_day
+LIMIT 2;
