@@ -56,6 +56,12 @@ Following are insights based on the initial analysis on the dataset
 
 ### Time-series (Operations) Analysis
 
+1. 26th and 27th November has the highest sales earning 4400+ GBP each day with 265 pizzas.
+2. Month-wise order percentage of 9% across all months indicate consistent sales throughout the year with July having the highest revenue (72k GBP)
+3. Second quarter had the highest sales with 208k GBP while fourth quarter presents the least with 199k GBP. This seems unlikely due to the holiday season in quarter 4.
+4. Lunch times of 12pm - 2pm an Dinner times of 7pm- 9pm present the busiest times of the day.
+5. Weekdays present 72% of the sales of the week indicating a strong presence near workplaces rather than residential areas.
+6. Peak hours of 4pm - 9pm comprises 54% of the sales, indicating no imbalance in orders in the evening/dinner.
 
 ## Recommendations
 

@@ -25,9 +25,9 @@ ON t3.pizza_type_id = t4.pizza_type_id;
 
 -- Dates with the most sales in comparison with the average orders per day
 SELECT order_date,
-        COUNT(DISTINCT order_id) AS order_count,
         SUM(quantity) AS pizza_count,
         SUM(quantity*price) AS sales,
+        COUNT(DISTINCT order_id) AS order_count,
         ROUND((SELECT COUNT(DISTINCT order_id) FROM PizzaTime)/(SELECT COUNT(DISTINCT order_date) FROM PizzaTime),1) AS averageOrders
 FROM PizzaTime
 GROUP BY order_date
@@ -38,7 +38,7 @@ LIMIT 5;
 
 SELECT STRFTIME('%m', order_date) AS months,
         COUNT(DISTINCT order_id) as monthwise_orders,
-        ROUND(COUNT(DISTINCT order_id)*1.0/(SELECT COUNT(DISTINCT order_id) FROM PizzaTime),2)*100 as avg_month_orders,
+        ROUND(COUNT(DISTINCT order_id)*1.0/(SELECT COUNT(DISTINCT order_id) FROM PizzaTime),2)*100 as month_wise_orders_percentage,
         SUM(price*quantity) AS month_sales
 FROM PizzaTime
 GROUP BY STRFTIME('%m', order_date);
