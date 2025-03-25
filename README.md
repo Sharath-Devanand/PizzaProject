@@ -47,10 +47,17 @@ Following are insights based on the initial analysis on the dataset
 
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Category.png?raw=true" width="30%">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Quantity.png?raw=true" width="30%">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Size.png?raw=true" width="30%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Category.png?raw=true" width="60%">
 </p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Quantity.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Size.png?raw=true" width="60%">
+</p>
+
 
 
 ### Price Analysis
