@@ -46,9 +46,9 @@ Following are insights based on the initial analysis on the dataset
 7. Third highest bill is 285 pounds with highest being 440 and 415, with an average of 16 pounds per day.
 
 
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Category.png?raw=true)
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Quantity.png?raw=true)
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Size.png?raw=true)
+![Revenue over Category](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Category.png?raw=true)
+![Revenue over Quantity](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Quantity.png?raw=true)
+![Revenue over Size](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_Size.png?raw=true)
 
 
 ### Price Analysis
@@ -59,9 +59,9 @@ Following are insights based on the initial analysis on the dataset
 4. Cheapest pizzas - Big Meat Pizza and the Vegetables pizza have 78% and 62% of the maximum orders respectively. Contrastingly, Expensive pizzas - Thai chicken and California Chicken are amongst the most sold.
 5. Average Order Value is 17 GBP. 
 
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/topPizzas.png?raw=true)
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Orders_hour.png?raw=true)
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_day.png?raw=true)
+![Top Pizzas](https://github.com/Sharath-Devanand/PizzaProject/blob/master/topPizzas.png?raw=true)
+![Orders over hours](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Orders_hour.png?raw=true)
+![Day-wise revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_day.png?raw=true)
 
 ### Time-series (Operations) Analysis
 
@@ -72,9 +72,9 @@ Following are insights based on the initial analysis on the dataset
 5. Weekdays present 72% of the sales of the week indicating a strong presence near workplaces rather than residential areas.
 6. Peak hours of 4pm - 9pm comprises 54% of the sales, indicating no imbalance in orders in the evening/dinner.
 
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_quarter.png?raw=true)
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/weekday_ordersPizzaProject_schema.png?raw=true)
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_peaktimes.png?raw=true)
+![Quarter-wise Revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_quarter.png?raw=true)
+![Orders - weekday v weekend](https://github.com/Sharath-Devanand/PizzaProject/blob/master/weekday_orders.png?raw=true)
+![peaktime and off peak revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_peaktimes.png?raw=true)
 
 ## Recommendations
 
