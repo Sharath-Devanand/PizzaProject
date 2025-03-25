@@ -73,7 +73,7 @@ Following are insights based on the initial analysis on the dataset
 6. Peak hours of 4pm - 9pm comprises 54% of the sales, indicating no imbalance in orders in the evening/dinner.
 
 ![Quarter-wise Revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_quarter.png?raw=true)
-![Orders - weekday v weekend](https://github.com/Sharath-Devanand/PizzaProject/blob/master/weekday_orders.png?raw=true)
+![Orders - weekday v weekend](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Weekday_orders.png?raw=true)
 ![peaktime and off peak revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_peaktimes.png?raw=true)
 
 ## Recommendations
