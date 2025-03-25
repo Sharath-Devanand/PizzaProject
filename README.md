@@ -1,4 +1,4 @@
-### Pizza Sales Analysis
+# Pizza Sales Analysis
 
 ## Project Background
 
@@ -28,7 +28,7 @@ The analysis is further sub-divided into 4 different categories each associated 
 ### Revenue Analysis
 
 
-### Pizza price Analysis
+### Pizza Price Analysis
 
 
 ### Time-series Analysis
@@ -43,7 +43,7 @@ The following categories present the recommendations for each department based o
 ### Finance
 
 
-#### Human Resources
+### Human Resources
 
 
 ## Assumptions and Caveats
