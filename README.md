@@ -17,8 +17,9 @@ The dataset comprises 4 tables each focusing on different aspects of the operati
 3. Pizza - The Pizza tables contain records of the size and price of a particular pizza along with its type ID linked to the Pizza details table
 4. Pizza Details - The Pizza details comprise the name of the pizza for the corresponding type ID, its category (out of 4 distinct categories) and the corresponding ingredients.
 
-![Pizza Stop Schema](https://github.com/Sharath-Devanand/PizzaProject/blob/master/PizzaProject_schema.png?raw=true)
-
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/PizzaProject_schema.png?raw=true" width="60%">
+</p>
 
 ## Analysis and Insights
 
@@ -68,9 +69,18 @@ Following are insights based on the initial analysis on the dataset
 4. Cheapest pizzas - Big Meat Pizza and the Vegetables pizza have 78% and 62% of the maximum orders respectively. Contrastingly, Expensive pizzas - Thai chicken and California Chicken are amongst the most sold.
 5. Average Order Value is 17 GBP. 
 
-![Top Pizzas](https://github.com/Sharath-Devanand/PizzaProject/blob/master/topPizzas.png?raw=true)
-![Orders over hours](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Orders_hour.png?raw=true)
-![Day-wise revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_day.png?raw=true)
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/topPizzas.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Orders_hour.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Revenue_day.png?raw=true" width="60%">
+</p>
 
 ### Time-series (Operations) Analysis
 
@@ -81,9 +91,17 @@ Following are insights based on the initial analysis on the dataset
 5. Weekdays present 72% of the sales of the week indicating a strong presence near workplaces rather than residential areas.
 6. Peak hours of 4pm - 9pm comprises 54% of the sales, indicating no imbalance in orders in the evening/dinner.
 
-![Quarter-wise Revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_quarter.png?raw=true)
-![Orders - weekday v weekend](https://github.com/Sharath-Devanand/PizzaProject/blob/master/Weekday_orders.png?raw=true)
-![peaktime and off peak revenue](https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_peaktimes.png?raw=true)
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_quarter.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/Weekday_orders.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/revenue_peaktimes.png?raw=true" width="60%">
+</p>
 
 ## Recommendations
 
