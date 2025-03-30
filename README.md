@@ -79,7 +79,7 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Categ.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Category.png?raw=true" width="60%">
 </p>
 
 <p align="center">
@@ -92,7 +92,7 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 </p>
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Pairing.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Pairings.png?raw=true" width="60%">
 </p>
 
 
@@ -156,7 +156,7 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 </p>
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_month.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/monthly_avg_revenue.png?raw=true" width="60%">
 </p>
 
 
