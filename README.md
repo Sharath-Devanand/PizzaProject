@@ -83,12 +83,9 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 </p>
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Size.png?raw=true" width="60%">
-</p>
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Size.png?raw=true" width="40%">
 
-
-<p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Quantity.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Quantity.png?raw=true" width="40%">
 </p>
 
 <p align="center">
@@ -121,11 +118,9 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/topPizzas.png?raw=true" width="60%">
-</p>
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/topPizzas.png?raw=true" width="40%">
 
-<p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/expensive_orders.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/expensive_orders.png?raw=true" width="40%">
 </p>
 
 
@@ -161,11 +156,9 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/revenue_quarter.png?raw=true" width="60%">
-</p>
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/revenue_quarter.png?raw=true" width="40%">
 
-<p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Orders_hour.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Orders_hour.png?raw=true" width="40%">
 </p>
 
 
