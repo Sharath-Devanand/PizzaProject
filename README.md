@@ -1,4 +1,4 @@
-# Pizza Sales Analysis
+# Pizza Stop - Sales Analysis using SQL
 
 
 ## Project Background
@@ -67,7 +67,7 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 3. The Veggie category brought in the least sales (193,000 GBP) indicating more preference towards meat.
 
 
-4. Barbeque Chicken Pizza is the best-selling pizza across sizes (42,000 GBP) shedding focus on regular restocking of the ingredients for Barbeque Chicken.
+4. Barbeque Chicken Pizza is one of the best-selling pizza across sizes (42,000 GBP) shedding focus on regular restocking of the ingredients for Barbeque Chicken.
 
 
 5. 96% of the revenue comes from orders with single-pizza orders. More efforts into bundling promotions and discounts.
@@ -76,13 +76,14 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 6. Classic Big Meat pizza proves to be the most paired with pizza generating the largest revenue off orders with more than one pizza.
 
 
-7. The top two highest bills are 440 and 415 GBP - a deeper analysis of the factors leading to these orders could help replicate or control them.
-
-
 
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Category.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Categ.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Size.png?raw=true" width="60%">
 </p>
 
 
@@ -90,9 +91,8 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
   <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Quantity.png?raw=true" width="60%">
 </p>
 
-
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Size.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Pairing.png?raw=true" width="60%">
 </p>
 
 
@@ -103,7 +103,7 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 ### Price Analysis
 
 
-1. The Classic category is the best-selling while Veggie has lower orders despite lower average prices. Contrasting to the Chicken category attracting the highest portion of revenue, it has the lowest number of orders. This suggests that a large portion of the customers are willing to pay a higher price to not sacrifice the chicken taste preference.
+1. The Classic category is the best-selling while Veggie has lower orders despite lower average prices.This suggests that a large portion of the customers are willing to pay a higher price to not sacrifice the taste preference.
 
 
 2. The large-size pizzas are the most ordered with close to 18,000+ orders while the double extra large pizzas are the least ordered suggesting there is more emphasis on value-for-money than premium prices for larger portions.
@@ -112,7 +112,7 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 3. The Classic Deluxe Pizza is the best-selling pizza (2453), followed by Barbeque Chicken (2400). The high Barbeque Chicken orders despite being from the least ordered category indicate further inspection of other pizzas in the Chicken category owing to low orders.
 
 
-4. Expensive pizzas, such as Thai chicken and California Chicken are amongst the most sold proving a higher impact of flavour for a higher price.
+4. Expensive pizzas, such as Thai Chicken and California Chicken are amongst the most sold proving a higher impact of flavour for a higher price.
 
 
 5. Average Order Value (AOV) is 17 GBP, given that most of the orders consist of a single pizza. Further exploration of add-ons like sides and drinks could boost the AOV.
@@ -124,15 +124,11 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
   <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/topPizzas.png?raw=true" width="60%">
 </p>
 
-
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Orders_hour.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Expensive_sold.png?raw=true" width="60%">
 </p>
 
 
-<p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_day.png?raw=true" width="60%">
-</p>
 
 
 ### Time-series (Operations) Analysis
@@ -155,9 +151,21 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 
 6. Peak hours (4 pm -9 pm) comprise 54% of the sales, suggesting a higher evening demand. Promotional activities during peak hours could attract more new customers.
 
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_day.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_month.png?raw=true" width="60%">
+</p>
+
 
 <p align="center">
   <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/revenue_quarter.png?raw=true" width="60%">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Orders_hour.png?raw=true" width="60%">
 </p>
 
 
