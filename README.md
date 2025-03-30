@@ -170,12 +170,9 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 
 
 <p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Weekday_orders.png?raw=true" width="60%">
-</p>
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Weekday_orders.png?raw=true" width="40%">
 
-
-<p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/revenue_peaktimes.png?raw=true" width="60%">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/revenue_peaktimes.png?raw=true" width="40%">
 </p>
 
 
