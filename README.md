@@ -4,7 +4,7 @@
 ## Project Background
 
 
-I am a data analyst at Pizza Stop, a local pizzeria in Sheffield. I focus on extracting insights from the 2015 sales records containing 20K+ orders. Based on these insights, I am tasked with providing recommendations to the finance, marketing, pricing, and operations departments.
+I am a data analyst at Pizza Stop, a local pizzeria. I focus on extracting insights from the 2015 sales records containing 20K+ orders. Based on these insights, I am tasked with providing recommendations to the finance, marketing, pricing, and operations departments.
 
 
 ## Executive Summary
@@ -82,16 +82,17 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
   <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Category.png?raw=true" width="60%">
 </p>
 
-<p align="center">
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Size.png?raw=true" width="40%">
-
-  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Quantity.png?raw=true" width="40%">
-</p>
 
 <p align="center">
   <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/pairing.png?raw=true" width="60%">
 </p>
 
+
+<p align="center">
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Size.png?raw=true" width="40%">
+
+  <img src="https://github.com/Sharath-Devanand/PizzaProject/blob/master/imgs/Revenue_Quantity.png?raw=true" width="40%">
+</p>
 
 
 
