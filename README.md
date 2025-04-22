@@ -4,7 +4,7 @@
 ## Project Background
 
 
-I am a data analyst at Pizza Stop, a local pizzeria. I focus on extracting insights from the 2015 sales records containing 20K+ orders. Based on these insights, I am tasked with providing recommendations to the finance, marketing, pricing, and operations departments.
+I am a data analyst for a fictitious pizza company -  Pizza Stop(Data sourced from Maven Analytics). I focus on extracting insights from the 2015 sales records containing 20K+ orders. Based on these insights, I am tasked with providing recommendations to the finance, marketing, pricing, and operations departments.
 
 
 ## Executive Summary
@@ -15,7 +15,7 @@ The Chicken category generates the most revenue (220,000 GBP) with one of the be
 ## Data Description
 
 
-The dataset comprises 4 tables each focusing on different aspects of the operations at the Pizzeria.
+The dataset (sourced from Maven Analytics) comprises 4 tables each focusing on different aspects of the operations at the Pizzeria.
 
 
 1. Orders - Consists of order IDs and the dates and times the order was placed.
@@ -214,10 +214,11 @@ The analysis is divided into 4 different sections - Exploratory, Revenue, Pricin
 ## Assumptions and Caveats
 
 
-1. Data Quality - The analysis assumes the sales data is processed by removing duplicates, null values and is consistent.
-2. Price Consistent - There is no price change of pizzas across the year
-3. External Factors - No promotional activities happened in that year.
-4. Categorisation - Each pizza_id is associated with a unique category and size.
+1. Dataset Sourced from - Maven Analytics
+2. Data Quality - The analysis assumes the sales data is processed by removing duplicates, null values and is consistent.
+3. Price Consistent - There is no price change of pizzas across the year
+4. External Factors - No promotional activities happened in that year.
+5. Categorisation - Each pizza_id is associated with a unique category and size.
 
 
 ## Technical Tools Used
